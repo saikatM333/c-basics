@@ -65,6 +65,38 @@ namespace ConsoleApp2
             }
 
             Console.WriteLine(sum);
+
+            // practicing string method 
+
+
+            string name = "Saikat ";
+            string last_name = "Mondal";
+            Console.WriteLine(string.Format(name));
+
+            Console.WriteLine(string.Compare(name , last_name ));
+            Console.WriteLine(Equals(name, last_name));
+            
+            Console.WriteLine(name.Substring(2,5));
+
+            Console.WriteLine(last_name.Replace("Mo","mo"));
+
+            Console.WriteLine(name.Contains("al"));
+
+            Console.WriteLine(name.TrimEnd());
+            Console.WriteLine(name.IndexOf('k'));
+            Console.WriteLine(name.ToUpper());
+            Console.WriteLine(last_name.ToLower());
+            Console.WriteLine(name.Concat(last_name));
+            int m = 100;
+            string z = m.ToString();
+            Console.WriteLine(z);
+            //string co = string.Copy(name);
+            string[] names = name.Split('i');
+
+            Console.WriteLine(names[0]);
+
+
+
         }
     }
 }
